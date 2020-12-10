@@ -8,9 +8,11 @@
 
 import UIKit
 import MapKit
-class RestaurantDetailMapCell: UITableViewCell {
 
+class RestaurantDetailMapCell: UITableViewCell {
+    
     @IBOutlet var mapView: MKMapView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,11 +23,11 @@ class RestaurantDetailMapCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
     func configure(location: String) {
         // Get location
         let geoCoder = CLGeocoder()
         
-        print(location)
         geoCoder.geocodeAddressString(location, completionHandler: { placemarks, error in
             if let error = error {
                 print(error.localizedDescription)

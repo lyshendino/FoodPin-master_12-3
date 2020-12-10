@@ -1,5 +1,5 @@
 //
-//  RestaurantDetailSeparatorCell RestaurantDetailSeparatorCell RestaurantDetailSeparatorCell.swift
+//  RestaurantDetailSeparatorCell.swift
 //  FoodPin
 //
 //  Created by NDHU_CSIE on 2020/12/3.
@@ -9,7 +9,7 @@
 import UIKit
 
 class RestaurantDetailSeparatorCell: UITableViewCell {
-
+    
     @IBOutlet var titleLabel: UILabel!
 
     override func awakeFromNib() {
